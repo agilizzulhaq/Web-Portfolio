@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Agil Izzulhaq</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8486232eeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <!-- ----- Home ----- -->
+            <article id="home">
+                <div class="container">
+                    <span class="text first-text"></span>
+                    <span class="text sec-text">Mobile Developer</span>
+                </div>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Agil</span><br>From Kendal</h1>
+                </div>
+            </article>
+            <!-- ----- My Profile ----- -->
+            <aside>
+                <article class="card">
+                    <h2 class="profile"> My Profile </h2>
+                    <img src="images/agil.png" class="profile-images">
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <section>
+                        <h3 class="name"> Muhammad Agil Izzulhaq </h3>
+                        <table class="information-data">
+                            <tr>
+                                <th>Major</th>
+                                <td>Computer Science</td>
+                            </tr>
+                            <tr>
+                                <th> &nbsp; </th>
+                            </tr>
+                            <tr>
+                                <th>University</th>
+                                <td>Universitas Negeri Semarang</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </aside>
+            <!-- ----- About ----- -->
+            <article id="about">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Muhammad Agil Izzulhaq. I'm a passionate computer science student in my fifth semester, pursuing my academic journey with a focus on innovative solutions and cutting-edge technologies. With a strong interest in both mobile applications and web development, I am determined to explore the dynamic world of software creation.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <article class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Mobile Development</span><br>Creating Mobile Device Software Applications</li>
+                        <li><span>Web Development</span><br>Creating, Building, and Maintaining Websites and Web Applications</li>
+                        <li><span>UI/UX Design</span><br>Designing Web and App Interfaces</li>
+                    </ul>
+                </article>
+                <article class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Mobile Development Cohort at Bangkit Academy 2023 Batch 2</li>
+                        <li><span>2022 - 2023</span><br>Junior Staff of Literacy and Science Department at BEM FMIPA UNNES 2022</li>
+                    </ul>
+                </article>
+                <article class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Universitas Negeri Semarang</li>
+                        <li><span>2018 - 2021</span><br>SMA Negeri 1 Weleri</li>
+                        <li><span>2015 - 2018</span><br>SMP Negeri 1 Weleri</li>
+                        <li><span>2009 - 2015</span><br>SD Negeri Jenarsari</li>
+                    </ul>
+                </article>
+            </article>
+            <!-- ----- Services ----- -->
+            <article id="service">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>Mobile Development</h2>
+                        <p>Creating software apps for mobile devices, such as smartphones, tablets, and other hand-held or wearable gadgets.</p>
+                        <a href="#service">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Building, programming, and maintaining websites and web applications.</p>
+                        <a href="#service">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Creating a seamless and meaningful user experience by understanding user needs, behaviors and goals.</p>
+                        <a href="#service">Learn more</a>
+                    </div>
+                </div>
+            </article>
+            <!-- ----- Portfolio ----- -->
+            <article id="portfolio">
+                <h1 class="sub-title">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/portfolio1.png">
+                        <div class="layer">
+                            <h3>Hospital Warehouse Management Web</h3>
+                            <p>Hospital Equipment and Room Management web portal, dedicated to enhancing healthcare service quality and ensuring patient safety through effective equipment and room management.</p>
+                            <a href="http://alkesrosati.me/login"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/portfolio2.png">
+                        <div class="layer">
+                            <h3>GitHub User App</h3>
+                            <p>The app showcases a curated list of GitHub users, displaying their respective followers and those they are following, streamlining the view to essential social interactions within the GitHub community.</p>
+                            <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/portfolio3.png">
+                        <div class="layer">
+                            <h3>Valorant Pro Players App</h3>
+                            <p>The Valorant Pro Players App offers concise profiles of professional Valorant players, featuring their personal details and preferred gaming equipment, catering to esports enthusiasts seeking insights into player setups.</p>
+                            <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#portfolio" class="btn">See more</a>
+            </article>
+            <!-- ----- Contact ----- -->
+            <article id="contact">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-square-envelope"></i> agil.izzulhaq@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +62 813-9159-8335</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/agilizzulhaq/"><i class="fa-brands fa-square-facebook"></i></i></a>
+                            <a href="https://www.instagram.com/izzulhaqagil/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://twitter.com/agilizzulhaq/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/agilizzulhaq/"><i class="fa-brands fa-linkedin"></i></i></a>
+                            <a href="https://github.com/agilizzulhaq/"><i class="fa-brands fa-square-github"></i></i></a>
+                        </div>
+                        <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2023 Muhammad Agil Izzulhaq<br>All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
