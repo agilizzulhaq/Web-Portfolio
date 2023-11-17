@@ -41,7 +41,7 @@ function closemenu() {
 }
 
 // ----- Contact Form -----
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzxowekiAQU0GLABpK_FF0TnIjwJEKxIng10pdGdXR6cAuirzeEQ1q_QqwIpz-JeJBUBQ/exec'
+const scriptURL = 'https://script.google.com/macros/s/YOUR_SRIPT_KEY/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
       
